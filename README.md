@@ -1,2 +1,1 @@
-# najwat.github.io
-Deployed pages for SI539
+# coming soon!
