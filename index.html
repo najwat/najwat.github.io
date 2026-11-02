@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Najwat Rehman</title>
+  <meta name="description" content="Najwat Rehman — Product professional, Designer, Writer.">
+  <meta property="og:title" content="Najwat Rehman">
+  <meta property="og:description" content="Product professional, Designer, Writer.">
+  <meta property="og:image" content="https://najwat.com/images/najwat.jpg">
+  <meta name="theme-color" content="#1f2b26">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1f2b26;
+      --ink: #f3efe6;
+      --muted: #b9bfb2;
+      --line: rgba(243, 239, 230, 0.18);
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      min-height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      background: url("images/najwat.jpg") center 30% / cover no-repeat;
+      min-height: 100vh;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8vw 7vw;
+    }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2.75rem, 6vw, 5.5rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .roles {
+      margin-top: 1.75rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      list-style: none;
+      padding-left: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      letter-spacing: 0.01em;
+    }
+    .roles li + li::before {
+      content: "·";
+      margin-right: 1.25rem;
+      color: var(--line);
+    }
+    @media (max-width: 800px) {
+      main { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+      .photo { min-height: 62vh; background-position: center 20%; }
+      .text { padding: 2.5rem 1.5rem 3rem; justify-content: flex-start; }
+      .roles { flex-direction: column; gap: 0.4rem; }
+      .roles li + li::before { content: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="photo" role="img" aria-label="Portrait of Najwat Rehman sitting on a sofa with a laptop"></div>
+    <section class="text">
+      <h1>Najwat<br>Rehman</h1>
+      <ul class="roles">
+        <li>Product professional</li>
+        <li>Designer</li>
+        <li>Writer</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
