@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Najwat Rehman</title>
-  <meta name="description" content="Najwat Rehman — Product professional, Designer, Writer.">
+  <meta name="description" content="Najwat Rehman — Product · Design · Writing">
   <meta property="og:title" content="Najwat Rehman">
-  <meta property="og:description" content="Product professional, Designer, Writer.">
+  <meta property="og:description" content="Product · Design · Writing">
   <meta property="og:image" content="https://najwat.com/images/najwat.jpg">
   <meta name="theme-color" content="#1f2b26">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,26 +53,14 @@
       margin-top: 1.75rem;
       padding-top: 1.75rem;
       border-top: 1px solid var(--line);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 1.25rem;
-      list-style: none;
-      padding-left: 0;
       color: var(--muted);
       font-size: clamp(1rem, 1.4vw, 1.2rem);
       letter-spacing: 0.01em;
-    }
-    .roles li + li::before {
-      content: "·";
-      margin-right: 1.25rem;
-      color: var(--line);
     }
     @media (max-width: 800px) {
       main { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
       .photo { min-height: 62vh; background-position: center 20%; }
       .text { padding: 2.5rem 1.5rem 3rem; justify-content: flex-start; }
-      .roles { flex-direction: column; gap: 0.4rem; }
-      .roles li + li::before { content: none; }
     }
   </style>
 </head>
@@ -81,11 +69,7 @@
     <div class="photo" role="img" aria-label="Portrait of Najwat Rehman sitting on a sofa with a laptop"></div>
     <section class="text">
       <h1>Najwat<br>Rehman</h1>
-      <ul class="roles">
-        <li>Product professional</li>
-        <li>Designer</li>
-        <li>Writer</li>
-      </ul>
+      <p class="roles">Product · Design · Writing</p>
     </section>
   </main>
 </body>
